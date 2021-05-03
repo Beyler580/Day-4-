@@ -37,7 +37,7 @@ public class PlayerLogger implements ILoggerService {
 	@Override
 	public void showPlayers() {
 		for (Player player : playerList) {
-			System.out.println(player.getName()+"\n"+player.getSurname()+"\n"+player.getTcNo()+"\n"+player.getBirthYear()+"\n"+player.getPassword()+"\n"+player.getEmail());
+			System.out.println(player.getName()+"\n"+player.getSurname()+"\n"+player.getTcNo()+"\n"+player.getBirthYear()+"\n"+player.getPassword()+"\n"+player.getEmail()+"\n"+player.getWallet());
 			System.out.println("--------------------------------------------------------------------------------------");
 			
 		}

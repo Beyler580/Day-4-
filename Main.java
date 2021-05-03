@@ -10,7 +10,7 @@ public class Main {
 		Set<Game> soldGames = new HashSet<Game>();
  		Player beyler = new Player("Beyler", "Qurbanov", "01589674689", 2005, "11188188", "beyler232@gmail.com",30);
 		Player ali = new Player("Ali", "Caliskan", "02349074689", 2001, "32324434", "alicaliskan@outlook.com",23);
-		Player mesut = new Player("Mesut", "Caliskan", "027349123659", 2000, "323223232", "mesutcaliskan@outlook.com",50);
+		Player mesut = new Player("Mesut", "Caliskan", "02349036190", 2000, "323223232", "mesutcaliskan@outlook.com",50);
 		ValidationManager validationManager = new ValidationManager();
 		PlayerLogger logger = new PlayerLogger();
 		PlayerManager playerManager = new PlayerManager(logger, validationManager);
@@ -35,7 +35,7 @@ public class Main {
 		gameManager.addGame(csgo, games);
 		gameManager.addGame(r6, games);
 		gameManager.addGame(pubg, games);
-		gameManager.deleteGame(pubg, games);
+		gameManager.deleteGame(r6, games);
 		gameManager.updateGamePrice(r6, 40,games); 
 		gameManager.updateGamePrice(pubg, 30, games); //Game couldnt find 
 		
@@ -58,6 +58,7 @@ public class Main {
 		playerManager.buyGame(soldGames, raft, mesut);
 		System.out.println("*****************************************************************\n");
 		playerManager.showBuyedGames(soldGames);
+		logger.showPlayers();
 
 		
 
